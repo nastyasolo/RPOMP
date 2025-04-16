@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RPOMP8(1)</string>
+
+    <string-array name="view_modes">
+        <item>Список</item>
+        <item>Карточки</item>
+    </string-array>
+
+    <string-array name="request_methods">
+        <item>GET</item>
+        <item>POST</item>
+    </string-array>
+</resources>
