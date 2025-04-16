@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Настройки" />
+    <item
+        android:id="@+id/menu_save_csv"
+        android:title="Сохранить в CSV" />
+    <item
+        android:id="@+id/menu_send_email"
+        android:title="Отправить по email" />
+</menu>

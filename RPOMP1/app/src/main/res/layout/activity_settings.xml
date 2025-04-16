@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- URL сервера -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL сервера"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/serverUrlEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Введите URL или выберите из списка"
+                android:inputType="textUri" />
+
+            <Spinner
+                android:id="@+id/urlSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/applyUrlButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Применить"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Количество строк -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Количество строк"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/rowCountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите количество строк"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Фильтр по возрасту -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фильтр по возрасту"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/ageFilterEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите минимальный возраст"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Показывать возраст и описание -->
+        <CheckBox
+            android:id="@+id/showAgeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Показывать возраст"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/showDescriptionCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Показывать описание"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Кнопки -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сбросить настройки"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+
+        <!-- Признаки авторства -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разработала: Сологуб ПО11"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+</ScrollView>

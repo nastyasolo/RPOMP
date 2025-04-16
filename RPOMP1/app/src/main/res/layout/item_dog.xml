@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Изображение собаки -->
+    <ImageView
+        android:id="@+id/dogImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Контейнер для текстовых элементов -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/dogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/dogAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+        android:textColor="@android:color/darker_gray"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/dogDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@android:color/darker_gray"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:padding="4dp"/>
+    </LinearLayout>
+</LinearLayout>

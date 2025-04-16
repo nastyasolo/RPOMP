@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="url_options">
+        <item>"https://gist.githubusercontent.com/nastyasolo/b83bd1b962edfc1ada001fc6f2befb50/raw/ebf92d5b5c6781574f8a98f2d5622f6ada403902/example_dogs.json"</item>
+        <item>"https://gist.githubusercontent.com/nastyasolo/440d72025dcd6552d030fcead11492b8/raw/e0ca4f644bfea7c2e7b3710a3c012da29620715d/dogs.json"</item>
+        <item>"https://gist.githubusercontent.com/nastyasolo/91c0ae19cca9ad2f97c0dadbd564ed4c/raw/61bdad8902b71f8d0ef77d66f7d03e6171dde389/dogs.json"</item>
+    </string-array>
+</resources>
