@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureColor="#5E4B3A"
+        android:gestureStrokeWidth="5"
+        android:gestureStrokeType="multiple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="400dp"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_gesture"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нарисуйте жест"
+                android:textSize="24sp"
+                android:textColor="#5E4B3A"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Подпись разработчика -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Разработала: Сологуб А.В., ПО-11"
+                android:textSize="14sp"
+                android:textColor="#5E4B3A"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </android.gesture.GestureOverlayView>
+
+    <!-- Кнопка авторства -->
+    <Button
+        android:id="@+id/authorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Сологуб"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_button_beige"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:onClick="showAuthorInfo"/>
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="?"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_button_beige"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+</RelativeLayout>

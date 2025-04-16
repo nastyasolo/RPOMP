@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/footer_background">
+
+    <TextView
+        android:id="@+id/tvTotalItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество телефонов: 0"
+        android:textSize="18sp"
+        android:textColor="@color/footer_text" />
+
+    <Button
+        android:id="@+id/btnShowCheckedItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать отмеченные телефоны"
+        android:backgroundTint="@color/button_background_primary"
+        android:textColor="@color/button_text_primary"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

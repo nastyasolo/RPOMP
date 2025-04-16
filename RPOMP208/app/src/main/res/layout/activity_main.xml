@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/light_gray">
+
+    <!-- Карта -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/map_background"/>
+
+    <!-- Панель кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnAddMarker"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="Добавить маркер"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_add_marker"/>
+
+        <Button
+            android:id="@+id/btnClearRoute"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="Очистить маршрут"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_clear"/>
+    </LinearLayout>
+
+    <!-- Карточка с информацией о местоположении -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Широта: -"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvLon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Долгота: -"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tvOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Статус: ожидание GPS"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Карточка с информацией о маршруте -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пройдено: 0.00 м"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvDistanceBetweenPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расстояние между точками: 0.00 м"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tvMarkersCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Маркеров: 0"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Информация о текущем маркере -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMarkerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvMarkerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название маркера"
+                android:textSize="18sp"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvMarkerDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание маркера"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tvMarkerCoordinates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Координаты: -"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Футер с информацией об авторе -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAuthorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Информация о разработчике"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_color"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сологуб Анастасия, ПО-11"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</LinearLayout>

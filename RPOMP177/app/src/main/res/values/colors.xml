@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#673AB7</color>
+    <color name="purple_200">#9C27B0</color>
+    <color name="colorPrimary">#2E7D32</color> <!-- Темно-зеленый -->
+    <color name="colorPrimaryDark">#1B5E20</color> <!-- Очень темно-зеленый -->
+    <color name="colorAccent">#4CAF50</color> <!-- Светло-зеленый -->
+    <color name="background">#1B5E20</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="buttonColor">#388E3C</color>
+</resources>

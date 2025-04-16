@@ -1,0 +1,39 @@
+<resources>
+    <!-- Основные цвета -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#AB4242</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="gray_200">#FFEEEEEE</color>
+    <color name="gray_500">#FF9E9E9E</color>
+    <color name="gray_700">#D09B9B</color>
+
+    <!-- Цвета для текста -->
+    <color name="text_primary">@color/black</color> <!-- Черный текст для светлого фона -->
+    <color name="text_secondary">@color/gray_700</color>
+    <color name="text_on_primary">@color/white</color> <!-- Белый текст для темного фона -->
+    <color name="text_on_secondary">@color/white</color>
+
+    <!-- Цвета для фона -->
+    <color name="background_light">@color/gray_500</color> <!-- Светлый фон -->
+    <color name="background_dark">@color/teal_700</color> <!-- Темный фон -->
+
+    <!-- Цвета для кнопок -->
+    <color name="button_background_primary">@color/gray_500</color>
+    <color name="button_text_primary">@color/white</color>
+    <color name="button_background_secondary">@color/purple_500</color>
+    <color name="button_text_secondary">@color/white</color>
+
+    <!-- Цвета для чекбоксов -->
+    <color name="checkbox_tint">@color/teal_700</color>
+
+    <!-- Цвета для хэдера -->
+    <color name="header_background">@color/teal_700</color> <!-- Темный фон хэдера -->
+    <color name="header_text">@color/white</color> <!-- Белый текст на хэдере -->
+
+    <!-- Цвета для футера -->
+    <color name="footer_background">@color/gray_200</color> <!-- Светлый фон футера -->
+    <color name="footer_text">@color/gray_500</color> <!-- Черный текст на футере -->
+</resources>

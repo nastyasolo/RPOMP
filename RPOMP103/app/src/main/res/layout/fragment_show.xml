@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <!-- Поле для поиска -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поиск по названию"
+        android:textColorHint="@color/textColorSecondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Кнопки для сортировки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSortById"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сортировать по ID"
+            android:textColor="@color/textColorPrimary"
+            android:backgroundTint="@color/colorAccent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSortByTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сортировать по названию"
+            android:textColor="@color/textColorPrimary"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- ListView для отображения заметок -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp" />
+</LinearLayout>

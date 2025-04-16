@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скачать файл"
+        android:backgroundTint="@color/primary_dark_purple"
+        android:textColor="@color/text_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Смотреть"
+        android:enabled="false"
+        android:backgroundTint="@color/accent_purple"
+        android:textColor="@color/text_white"
+        android:layout_below="@id/downloadButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:enabled="false"
+        android:backgroundTint="@color/accent_purple"
+        android:textColor="@color/text_white"
+        android:layout_below="@id/viewButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:layout_below="@id/deleteButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/authorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Сологуб Анастасия, ПО-11"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/authorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Сологуб"
+        android:layout_above="@id/authorLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+</RelativeLayout>

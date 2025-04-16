@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Сологуб Анастасия ПО-11"
+        android:textSize="16sp"
+        android:layout_margin="4dp"
+        android:textColor="@color/textColorPrimary" />
+
+    <Button
+        android:id="@+id/buttonTaskInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Сологуб Анастасия ПО-11"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/textColorPrimary" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

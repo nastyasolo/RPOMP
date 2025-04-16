@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/header_background">
+
+
+    <TextView
+        android:id="@+id/tvAuthorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Сологуб Анастасия, ПО-11"
+        android:textSize="16sp"
+        android:textColor="@color/header_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Показать задачу (нажимает Сологуб)"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button_background_primary"
+        android:textColor="@color/button_text_primary" />
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/header_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Поиск товаров..." />
+</LinearLayout>

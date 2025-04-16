@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  "
+        android:textSize="28sp"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Камера"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:drawableLeft="@drawable/ic_camera"
+        android:drawableTint="@color/textColor"/>
+
+    <Button
+        android:id="@+id/btnMedia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Медиаплеер"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:drawableLeft="@drawable/ic_play"
+        android:drawableTint="@color/textColor"/>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Галерея    "
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:drawableLeft="@drawable/ic_gallery"
+        android:drawableTint="@color/textColor"/>
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Справка"
+        android:textSize="20sp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/textColor"
+        android:drawableLeft="@drawable/ic_help"
+        android:drawableTint="@color/textColor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Сологуб Анастасия, ПО-11"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

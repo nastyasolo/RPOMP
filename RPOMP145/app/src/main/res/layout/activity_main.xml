@@ -1,0 +1,171 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/buttonImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение"
+        android:onClick="onClFile"
+        style="@style/ButtonStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonAudio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Выбрать аудио"
+        android:onClick="onClFile"
+        style="@style/ButtonStyle"
+        app:layout_constraintTop_toBottomOf="@id/buttonImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Выбрать видео"
+        android:onClick="onClFile"
+        style="@style/ButtonStyle"
+        app:layout_constraintTop_toBottomOf="@id/buttonAudio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/buttonVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/videoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/mediaControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp">
+
+
+        <Button
+            android:id="@+id/speedDown"
+            style="@style/ButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:onClick="speedDown"
+            android:text="&#8249;&#8249;"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:text="&#9658;"
+        android:onClick="play"
+        style="@style/ButtonStyle"
+        android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:text="&#9208;"
+        android:onClick="pause"
+        style="@style/ButtonStyle"
+        android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:text="&#9209;"
+        android:onClick="stop"
+        style="@style/ButtonStyle"
+        android:visibility="gone"/>
+        <Button
+            android:id="@+id/speedUp"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:text="&#8250;&#8250;"
+            android:onClick="speedUp"
+            style="@style/ButtonStyle"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Сброс"
+        android:onClick="onReset"
+        style="@style/ButtonStyle"
+        app:layout_constraintTop_toBottomOf="@id/mediaControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/authorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала: Сологуб Анастасия, ПО-11"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажимает Сологуб"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

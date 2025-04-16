@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#795548</color> <!-- Коричневый -->
+    <color name="colorPrimaryDark">#5D4037</color> <!-- Тёмно-коричневый -->
+    <color name="colorAccent">#D7CCC8</color> <!-- Светло-коричневый -->
+    <color name="textColorPrimary">#FFFFFF</color> <!-- Белый текст -->
+    <color name="textColorSecondary">#D7CCC8</color> <!-- Светло-коричневый текст -->
+</resources>
