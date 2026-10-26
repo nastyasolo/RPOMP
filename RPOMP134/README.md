@@ -13,3 +13,7 @@
 ## Стек
 Java · Android SDK · AsyncTask · HttpURLConnection · SharedPreferences · 
 PopupWindow · FileProvider
+
+## Скриншоты
+
+![Главный экран](1.png)
