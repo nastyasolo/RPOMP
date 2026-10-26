@@ -12,3 +12,7 @@
 
 ## Стек
 Java · Android SDK · Camera2 API · MediaPlayer · RecyclerView · SQLite
+
+## Скриншоты
+
+![Главный экран](1.png)
