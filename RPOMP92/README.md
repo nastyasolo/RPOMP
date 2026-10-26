@@ -11,3 +11,8 @@
 
 ## Стек
 Java · Android SDK · ListView · BaseAdapter · Parcelable
+
+## Скриншоты
+
+![Главный экран](1.png)
+![Корзина товаров](2.png)
