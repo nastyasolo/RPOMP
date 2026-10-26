@@ -12,3 +12,7 @@
 ## Стек
 Java · Android SDK · SQLiteOpenHelper · FragmentPagerAdapter · 
 ListView + CursorAdapter
+
+## Скриншоты
+
+![Главный экран](1.png)
