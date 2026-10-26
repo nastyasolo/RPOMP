@@ -12,3 +12,7 @@
 ## Стек
 Java · Android SDK · osmdroid · Google Play Services Location · 
 SharedPreferences
+
+## Скриншоты
+
+![Главный экран](1.png)
