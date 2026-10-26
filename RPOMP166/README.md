@@ -11,3 +11,6 @@
 
 ## Стек
 Java · Android SDK · Android Gesture API · AndroidX AppCompat
+
+## Скриншоты
+![Главный экран](1.png)
