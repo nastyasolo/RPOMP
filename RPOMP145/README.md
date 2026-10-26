@@ -13,3 +13,7 @@
 ## Стек
 Java · Android SDK · MediaPlayer · VideoView · SeekBar · 
 Intent.ACTION_GET_CONTENT
+
+## Скриншоты
+
+![Главный экран](1.png)
