@@ -14,3 +14,9 @@ Android-приложение для загрузки списка собак с 
 
 ## Стек
 Java · Android SDK · Volley · Gson · Glide · OpenCSV · RecyclerView
+
+## Скриншоты
+
+![Главный экран ](1.png)
+![Экран настроек ](2.png)
+![Экран детальной информации](3.png)
